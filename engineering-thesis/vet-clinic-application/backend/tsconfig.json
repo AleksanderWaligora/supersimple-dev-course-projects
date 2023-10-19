@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    
+  },
+  "allowImportingTsExtensions":"true",
+  "include": ["src", "bin/www.ts"],
+  "exclude": ["node_modules"],
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
+}
