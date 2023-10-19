@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        /*
+        const product = {
+            name: 'socks',
+            price: 1090
+        }
+        console.log(product)
+        console.log(product.name)
+        console.log(product.price)
+        product.newProperty = true;
+        console.log(product.newProperty)
+        delete product.newProperty;
+        console.log(product.newProperty)
+        */
+        const product2 = {
+            name: 'shirt',
+            'delivery-time': '1 day',
+            rating: {
+                starts: 4.5,
+                count: 87
+            },
+            fun: function function1() {
+                console.log('function inside object')
+            },
+            fun2: function () {
+                console.log('this is function too')
+            },
+            method() {
+                console.log("eas")
+            }
+        };
+        console.log(product2)
+        console.log(product2['delivery-time'])
+        console.log(product2.rating.count)
+        product2.fun()
+        product2.fun2()
+        console.log(JSON.stringify(product2))
+        console.log(JSON.parse(JSON.stringify(product2)))
+        console.log('hello'.length)
+        console.log('hello'.toUpperCase())
+        const { count } = product2
+        const object5 = {
+            //   count:count
+            count,
+            method: function function1() {
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

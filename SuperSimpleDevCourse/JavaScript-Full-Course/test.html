@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            height: 10000px;
+        }
+
+        .square {
+
+            background-color: green;
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin-left: 60px;
+        }
+
+        .sub-square {
+            width: 30px;
+            height: 30px;
+            background-color: lightgreen;
+            position: absolute;
+            right: -10px;
+            bottom: -20px;
+        }
+
+        .sidebar {
+            position: fixed;
+            background-color: lightblue;
+            width: 50px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="sidebar">
+
+    </div>
+    <div class="square">
+
+        <div class="sub-square"></div>
+
+    </div>
+
+</body>
+
+</html>
